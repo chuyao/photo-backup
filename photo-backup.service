@@ -1,0 +1,9 @@
+[Unit]
+Description=Daily Photo Backup Service
+
+[Service]
+ExecStart=/usr/local/bin/photo_backup.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
